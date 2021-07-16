@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		89CF4D0226A177E100E6A28C /* TestSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CF4CF826A177E100E6A28C /* TestSDK.framework */; };
 		89CF4D0726A177E100E6A28C /* TestSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CF4D0626A177E100E6A28C /* TestSDKTests.m */; };
-		89CF4D0926A177E100E6A28C /* TestSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CF4CFB26A177E100E6A28C /* TestSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89CF4D1426A1786D00E6A28C /* IKNSObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CF4D1226A1786D00E6A28C /* IKNSObject.h */; };
+		89CF4D1526A1786D00E6A28C /* IKNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CF4D1326A1786D00E6A28C /* IKNSObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +25,12 @@
 
 /* Begin PBXFileReference section */
 		89CF4CF826A177E100E6A28C /* TestSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		89CF4CFB26A177E100E6A28C /* TestSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSDK.h; sourceTree = "<group>"; };
 		89CF4CFC26A177E100E6A28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89CF4D0126A177E100E6A28C /* TestSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89CF4D0626A177E100E6A28C /* TestSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSDKTests.m; sourceTree = "<group>"; };
 		89CF4D0826A177E100E6A28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89CF4D1226A1786D00E6A28C /* IKNSObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IKNSObject.h; sourceTree = "<group>"; };
+		89CF4D1326A1786D00E6A28C /* IKNSObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IKNSObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +73,9 @@
 		89CF4CFA26A177E100E6A28C /* TestSDK */ = {
 			isa = PBXGroup;
 			children = (
-				89CF4CFB26A177E100E6A28C /* TestSDK.h */,
 				89CF4CFC26A177E100E6A28C /* Info.plist */,
+				89CF4D1226A1786D00E6A28C /* IKNSObject.h */,
+				89CF4D1326A1786D00E6A28C /* IKNSObject.m */,
 			);
 			path = TestSDK;
 			sourceTree = "<group>";
@@ -93,7 +96,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89CF4D0926A177E100E6A28C /* TestSDK.h in Headers */,
+				89CF4D1426A1786D00E6A28C /* IKNSObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CF4D1526A1786D00E6A28C /* IKNSObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +348,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TestSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -367,6 +372,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TestSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
